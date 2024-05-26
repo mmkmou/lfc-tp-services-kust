@@ -1,0 +1,14 @@
+resources:
+- ../../base
+- namespace.yaml
+
+namespace: production
+
+patches:
+- path: transactions-deploy-prod.yaml
+- path: transactions-svc-prod.yaml
+
+secretGenerator:
+- name: postgres-password
+  literals:
+  - password=SphAnDUoStOC

@@ -1,0 +1,17 @@
+resources:
+- ../../base
+- namespace.yaml
+- adminer-svc.yaml
+- adminer.yaml
+
+
+namespace: dev
+
+patches:
+- path: transactions-deploy-dev.yaml
+- path: transactions-svc-dev.yaml
+
+secretGenerator:
+- name: postgres-password
+  literals:
+  - password=Azerty@12
