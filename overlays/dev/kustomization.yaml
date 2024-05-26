@@ -1,8 +1,6 @@
 resources:
 - ../../base
 - namespace.yaml
-- adminer-svc.yaml
-- adminer.yaml
 
 
 namespace: dev
